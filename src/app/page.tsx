@@ -1,16 +1,29 @@
+"use client";
+
 import { useEffect } from "react";
 import { initCursor } from "./cursor-client";
 
 export default function Home() {
   useEffect(() => {
     initCursor();
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add("visible"), i * 80);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    reveals.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
   }, []);
 
   return (
     <>
       <div className="cursor" id="cursor" />
-      <div className="cursor-ring" id="cursorRing" />
-
       <nav>
         <a href="#" className="nav-logo">
           VL.DEV
@@ -19,13 +32,10 @@ export default function Home() {
           Let&apos;s talk →
         </a>
       </nav>
-
       {/* Hero */}
       <section className="hero">
         <div className="hero-bg-text">BUILD</div>
-        <div className="hero-tag">
-          Available for projects · Brisbane / Remote
-        </div>
+        <div className="hero-tag">Available for projects · Brisbane / Remote</div>
         <h1 className="hero-headline">
           I build things
           <br />
@@ -39,7 +49,6 @@ export default function Home() {
         </p>
         <div className="hero-scroll">Scroll</div>
       </section>
-
       {/* Marquee */}
       <div className="marquee-wrap">
         <div className="marquee-track">
@@ -93,13 +102,10 @@ export default function Home() {
           </span>
         </div>
       </div>
-
       {/* Work */}
       <section className="work" id="work">
         <div className="section-label">Selected Work</div>
-
         <div className="projects-grid">
-          {/* Featured: Grademate */}
           <a
             href="https://grademate.dev"
             target="_blank"
@@ -110,9 +116,9 @@ export default function Home() {
               <div className="project-num">01 — Featured</div>
               <h2 className="project-title">Grademate</h2>
               <p className="project-desc">
-                A grade calculator for university students that spread
-                organically through student Facebook groups. Real users, real
-                traction — built and shipped solo.
+                A grade calculator for university students that spread organically
+                through student Facebook groups. Real users, real traction —
+                built and shipped solo.
               </p>
               <div className="project-tags">
                 <span className="project-tag">Next.js</span>
@@ -127,8 +133,6 @@ export default function Home() {
             </div>
             <span className="project-arrow">↗</span>
           </a>
-
-          {/* Yorick */}
           <a
             href="https://yorick.live"
             target="_blank"
@@ -148,8 +152,6 @@ export default function Home() {
             </div>
             <span className="project-arrow">↗</span>
           </a>
-
-          {/* Eightysix */}
           <a
             href="https://eightysix.bar"
             target="_blank"
@@ -172,7 +174,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-
       {/* About */}
       <section className="about" id="about">
         <div className="reveal">
@@ -193,10 +194,10 @@ export default function Home() {
             scratch, grown users organically, and understand what it takes to go
             from idea to live product.
             <br />
-            <br />
-            I work with <strong>creatives, hospitality businesses, and startups</strong>{" "}
-            who need someone that actually gets their world — not a generic
-            agency that&apos;ll hand you a WordPress template.
+            <br />I work with{" "}
+            <strong>creatives, hospitality businesses, and startups</strong> who
+            need someone that actually gets their world — not a generic agency
+            that&apos;ll hand you a WordPress template.
           </p>
           <div className="skills-row">
             <span className="skill-chip">Next.js</span>
@@ -210,14 +211,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* CTA */}
       <section className="cta" id="contact">
         <div className="cta-bg" />
         <div className="cta-label reveal">Let&apos;s work together</div>
         <h2 className="cta-headline reveal">
-          Got a
-          <br />
+          Got a<br />
           project?
         </h2>
         <a href="mailto:hi@vincelapore.dev" className="cta-link reveal">
@@ -225,7 +224,6 @@ export default function Home() {
         </a>
         <p className="cta-email reveal">hi@vincelapore.dev</p>
       </section>
-
       <footer>
         <span>© 2026 Vince Lapore</span>
         <span>Brisbane, AU · Available for remote work</span>

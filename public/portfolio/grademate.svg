@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a08"/>
+      <stop offset="60%" stop-color="#111110"/>
+      <stop offset="100%" stop-color="#0a0a08"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff4d00" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="80" y="90" width="1440" height="820" rx="18" fill="none" stroke="#2a2a26" stroke-width="2"/>
+
+  <rect x="130" y="140" width="1340" height="84" rx="14" fill="#0a0a08" stroke="#2a2a26" stroke-width="2"/>
+  <circle cx="180" cy="182" r="10" fill="#ff4d00"/>
+  <circle cx="214" cy="182" r="10" fill="#6b6860"/>
+  <circle cx="248" cy="182" r="10" fill="#2a2a26"/>
+  <text x="310" y="190" fill="#f0ece2" font-size="22" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">GRADEMATE</text>
+
+  <text x="130" y="330" fill="#f0ece2" font-size="90" font-family="Bebas Neue, Impact, sans-serif" letter-spacing="1">Grade calculator</text>
+  <text x="130" y="400" fill="#f0ece2" font-size="90" font-family="Bebas Neue, Impact, sans-serif" letter-spacing="1">for students</text>
+
+  <rect x="130" y="470" width="520" height="12" fill="url(#accent)"/>
+
+  <text x="130" y="560" fill="#6b6860" font-size="28" font-family="DM Sans, system-ui, -apple-system, Segoe UI, sans-serif">
+    Organic growth, real users, shipped fast.
+  </text>
+
+  <g opacity="0.9">
+    <rect x="130" y="640" width="410" height="160" rx="14" fill="#0a0a08" stroke="#2a2a26" stroke-width="2"/>
+    <rect x="570" y="640" width="410" height="160" rx="14" fill="#0a0a08" stroke="#2a2a26" stroke-width="2"/>
+    <rect x="1010" y="640" width="460" height="160" rx="14" fill="#0a0a08" stroke="#2a2a26" stroke-width="2"/>
+    <text x="170" y="720" fill="#f0ece2" font-size="42" font-family="Bebas Neue, Impact, sans-serif">100+</text>
+    <text x="170" y="760" fill="#6b6860" font-size="18" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">ORGANIC USERS</text>
+    <text x="610" y="720" fill="#ff4d00" font-size="42" font-family="Bebas Neue, Impact, sans-serif">NEXT.JS</text>
+    <text x="610" y="760" fill="#6b6860" font-size="18" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">FULL STACK</text>
+    <text x="1050" y="720" fill="#f0ece2" font-size="42" font-family="Bebas Neue, Impact, sans-serif">SUPABASE</text>
+    <text x="1050" y="760" fill="#6b6860" font-size="18" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">POSTGRES</text>
+  </g>
+</svg>
+

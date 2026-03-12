@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a08"/>
+      <stop offset="55%" stop-color="#111110"/>
+      <stop offset="100%" stop-color="#0a0a08"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ff4d00" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#ff4d00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#spot)"/>
+
+  <rect x="80" y="90" width="1440" height="820" rx="18" fill="none" stroke="#2a2a26" stroke-width="2"/>
+
+  <text x="130" y="260" fill="#f0ece2" font-size="92" font-family="Bebas Neue, Impact, sans-serif" letter-spacing="1">Yorick</text>
+  <text x="130" y="330" fill="#f0ece2" font-size="92" font-family="Bebas Neue, Impact, sans-serif" letter-spacing="1">Theatre OS</text>
+
+  <text x="130" y="430" fill="#6b6860" font-size="28" font-family="DM Sans, system-ui, -apple-system, Segoe UI, sans-serif">
+    Directory • Scheduling • Portfolios
+  </text>
+
+  <g opacity="0.95">
+    <rect x="130" y="520" width="500" height="300" rx="14" fill="#0a0a08" stroke="#2a2a26" stroke-width="2"/>
+    <rect x="670" y="520" width="800" height="140" rx="14" fill="#0a0a08" stroke="#2a2a26" stroke-width="2"/>
+    <rect x="670" y="680" width="800" height="140" rx="14" fill="#0a0a08" stroke="#2a2a26" stroke-width="2"/>
+
+    <text x="170" y="585" fill="#ff4d00" font-size="18" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">REHEARSALS</text>
+    <rect x="170" y="610" width="420" height="14" rx="7" fill="#2a2a26"/>
+    <rect x="170" y="640" width="320" height="14" rx="7" fill="#2a2a26"/>
+    <rect x="170" y="670" width="380" height="14" rx="7" fill="#2a2a26"/>
+
+    <text x="710" y="585" fill="#f0ece2" font-size="18" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">CAST</text>
+    <rect x="710" y="610" width="420" height="14" rx="7" fill="#2a2a26"/>
+    <rect x="710" y="705" width="560" height="14" rx="7" fill="#2a2a26"/>
+  </g>
+</svg>
+

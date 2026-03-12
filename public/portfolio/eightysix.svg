@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a08"/>
+      <stop offset="55%" stop-color="#111110"/>
+      <stop offset="100%" stop-color="#0a0a08"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff4d00" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="80" y="90" width="1440" height="820" rx="18" fill="none" stroke="#2a2a26" stroke-width="2"/>
+
+  <text x="130" y="270" fill="#f0ece2" font-size="92" font-family="Bebas Neue, Impact, sans-serif" letter-spacing="1">Eightysix</text>
+  <text x="130" y="340" fill="#f0ece2" font-size="92" font-family="Bebas Neue, Impact, sans-serif" letter-spacing="1">Hospitality tech</text>
+
+  <rect x="130" y="390" width="720" height="16" fill="url(#bar)"/>
+
+  <text x="130" y="470" fill="#6b6860" font-size="28" font-family="DM Sans, system-ui, -apple-system, Segoe UI, sans-serif">
+    Built for bars and venues: fast, clear, operator-first.
+  </text>
+
+  <g opacity="0.95">
+    <rect x="130" y="540" width="1340" height="300" rx="14" fill="#0a0a08" stroke="#2a2a26" stroke-width="2"/>
+
+    <text x="180" y="610" fill="#ff4d00" font-size="18" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">DASHBOARD</text>
+
+    <rect x="180" y="650" width="340" height="16" rx="8" fill="#2a2a26"/>
+    <rect x="180" y="682" width="420" height="16" rx="8" fill="#2a2a26"/>
+    <rect x="180" y="714" width="300" height="16" rx="8" fill="#2a2a26"/>
+
+    <rect x="680" y="640" width="300" height="140" rx="14" fill="#111110" stroke="#2a2a26" stroke-width="2"/>
+    <rect x="1010" y="640" width="420" height="140" rx="14" fill="#111110" stroke="#2a2a26" stroke-width="2"/>
+    <text x="720" y="710" fill="#f0ece2" font-size="46" font-family="Bebas Neue, Impact, sans-serif">86</text>
+    <text x="720" y="745" fill="#6b6860" font-size="18" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">OPS READY</text>
+    <text x="1050" y="710" fill="#f0ece2" font-size="46" font-family="Bebas Neue, Impact, sans-serif">LIVE</text>
+    <text x="1050" y="745" fill="#6b6860" font-size="18" font-family="DM Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" letter-spacing="2">VENUE TOOLS</text>
+  </g>
+</svg>
+
