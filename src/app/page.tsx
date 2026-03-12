@@ -1,65 +1,236 @@
-import Image from "next/image";
+import { useEffect } from "react";
+import { initCursor } from "./cursor-client";
 
 export default function Home() {
+  useEffect(() => {
+    initCursor();
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <div className="cursor" id="cursor" />
+      <div className="cursor-ring" id="cursorRing" />
+
+      <nav>
+        <a href="#" className="nav-logo">
+          VL.DEV
+        </a>
+        <a href="mailto:hi@vincelapore.dev" className="nav-cta">
+          Let&apos;s talk →
+        </a>
+      </nav>
+
+      {/* Hero */}
+      <section className="hero">
+        <div className="hero-bg-text">BUILD</div>
+        <div className="hero-tag">
+          Available for projects · Brisbane / Remote
+        </div>
+        <h1 className="hero-headline">
+          I build things
+          <br />
+          people <em>actually</em>
+          <br />
+          use.
+        </h1>
+        <p className="hero-sub">
+          Developer specialising in web apps and digital products — for
+          creatives, businesses, and anyone with a problem worth solving.
+        </p>
+        <div className="hero-scroll">Scroll</div>
+      </section>
+
+      {/* Marquee */}
+      <div className="marquee-wrap">
+        <div className="marquee-track">
+          <span className="marquee-item">
+            Next.js <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            React <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Supabase <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Tailwind <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Vercel <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Stripe <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            TypeScript <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Full-Stack <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Next.js <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            React <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Supabase <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Tailwind <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Vercel <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Stripe <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            TypeScript <span>✦</span>
+          </span>
+          <span className="marquee-item">
+            Full-Stack <span>✦</span>
+          </span>
+        </div>
+      </div>
+
+      {/* Work */}
+      <section className="work" id="work">
+        <div className="section-label">Selected Work</div>
+
+        <div className="projects-grid">
+          {/* Featured: Grademate */}
+          <a
+            href="https://grademate.dev"
+            target="_blank"
+            rel="noreferrer"
+            className="project-card featured reveal"
+          >
+            <div>
+              <div className="project-num">01 — Featured</div>
+              <h2 className="project-title">Grademate</h2>
+              <p className="project-desc">
+                A grade calculator for university students that spread
+                organically through student Facebook groups. Real users, real
+                traction — built and shipped solo.
+              </p>
+              <div className="project-tags">
+                <span className="project-tag">Next.js</span>
+                <span className="project-tag">Tailwind</span>
+                <span className="project-tag">Supabase</span>
+                <span className="project-tag">EdTech</span>
+              </div>
+            </div>
+            <div className="project-meta">
+              <div className="project-stat">100+</div>
+              <div className="project-stat-label">Organic users</div>
+            </div>
+            <span className="project-arrow">↗</span>
+          </a>
+
+          {/* Yorick */}
+          <a
+            href="https://yorick.live"
+            target="_blank"
+            rel="noreferrer"
+            className="project-card reveal"
+          >
+            <div className="project-num">02</div>
+            <h2 className="project-title">Yorick</h2>
+            <p className="project-desc">
+              A theatre operating system — directory, rehearsal scheduler, and
+              actor portfolio platform built for the performing arts industry.
+            </p>
+            <div className="project-tags">
+              <span className="project-tag">SaaS</span>
+              <span className="project-tag">Next.js</span>
+              <span className="project-tag">Arts Tech</span>
+            </div>
+            <span className="project-arrow">↗</span>
+          </a>
+
+          {/* Eightysix */}
+          <a
+            href="https://eightysix.bar"
+            target="_blank"
+            rel="noreferrer"
+            className="project-card reveal"
+          >
+            <div className="project-num">03</div>
+            <h2 className="project-title">Eightysix</h2>
+            <p className="project-desc">
+              Hospitality tech for bars and venues. Purpose-built for an
+              industry that knows exactly what it needs — and hates tools that
+              don&apos;t get it.
+            </p>
+            <div className="project-tags">
+              <span className="project-tag">Hospitality</span>
+              <span className="project-tag">Next.js</span>
+              <span className="project-tag">Supabase</span>
+            </div>
+            <span className="project-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="about" id="about">
+        <div className="reveal">
+          <div className="section-label">About</div>
+          <h2 className="about-headline">
+            Builder.
+            <br />
+            <em>Not</em>
+            <br />
+            just a dev.
+          </h2>
+        </div>
+        <div className="reveal">
+          <p className="about-body">
+            I&apos;m Vince — a Brisbane-based developer who builds{" "}
+            <strong>real products for real people</strong>, not just pretty
+            websites that sit there. I&apos;ve shipped multiple apps from
+            scratch, grown users organically, and understand what it takes to go
+            from idea to live product.
+            <br />
+            <br />
+            I work with <strong>creatives, hospitality businesses, and startups</strong>{" "}
+            who need someone that actually gets their world — not a generic
+            agency that&apos;ll hand you a WordPress template.
           </p>
+          <div className="skills-row">
+            <span className="skill-chip">Next.js</span>
+            <span className="skill-chip">React</span>
+            <span className="skill-chip">Supabase</span>
+            <span className="skill-chip">Tailwind</span>
+            <span className="skill-chip">Stripe</span>
+            <span className="skill-chip">Vercel</span>
+            <span className="skill-chip">TypeScript</span>
+            <span className="skill-chip">PostgreSQL</span>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      {/* CTA */}
+      <section className="cta" id="contact">
+        <div className="cta-bg" />
+        <div className="cta-label reveal">Let&apos;s work together</div>
+        <h2 className="cta-headline reveal">
+          Got a
+          <br />
+          project?
+        </h2>
+        <a href="mailto:hi@vincelapore.dev" className="cta-link reveal">
+          Let&apos;s talk <span className="cta-arrow">↗</span>
+        </a>
+        <p className="cta-email reveal">hi@vincelapore.dev</p>
+      </section>
+
+      <footer>
+        <span>© 2026 Vince Lapore</span>
+        <span>Brisbane, AU · Available for remote work</span>
+        <span>vincelapore.dev</span>
+      </footer>
+    </>
   );
 }
