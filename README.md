@@ -1,30 +1,26 @@
 # vincelapore.dev
 
-Personal portfolio for Vince Lapore, Junior Product Engineer based in Brisbane, AU.
+My current portfolio. Junior Product Engineer, Brisbane / remote.
 
 **Live:** [vincelapore-dev.vercel.app](https://vincelapore-dev.vercel.app)
 
 ## Overview
 
-A focused developer portfolio that introduces Vince, highlights selected product work, and makes it easy to get in touch. The homepage surfaces featured projects (Grademate, Yorick, Eightysix) with stack tags and outbound links, plus availability and contact details for Brisbane / remote work.
+Short intro, selected work, stack, and a clear way to email me. The homepage links out to Grademate, Yorick, and Eightysix with a line of context and tags each. Contact is `hi@vincelapore.dev`.
 
-This is the current portfolio site. An earlier personal site lives in the [`website`](https://github.com/vincelapore/website) repo.
+An earlier personal site still exists in [`website`](https://github.com/vincelapore/website); this repo is the one to link for hiring.
 
-## Features
+## What's on the site
 
-- Hero with availability status and contact CTA (`hi@vincelapore.dev`)
-- Selected work grid with project descriptions, tech tags, and external links
-- Skills / stack callouts (TypeScript, Supabase, Tailwind, full-stack)
-- Portfolio route for additional work presentation
-- Responsive layout built for desktop and mobile
+- Availability note (Brisbane / remote) and contact CTA
+- Selected work cards with outbound project links
+- Stack callouts: TypeScript, Supabase, Tailwind, full-stack
+- Extra `/portfolio` route
 
 ## Tech stack
 
-- Next.js (App Router)
-- React
-- TypeScript
-- Tailwind CSS
-- Deployed on Vercel
+- Next.js (App Router), React, TypeScript, Tailwind CSS
+- Hosted on Vercel
 
 ## Getting started
 
@@ -44,8 +40,8 @@ npm start
 
 ## Deploy
 
-Hosted on [Vercel](https://vercel.com). Connect the repo and use the default Next.js build settings.
+On Vercel with the default Next.js settings.
 
 ## Author
 
-Vince Lapore · [portfolio](https://vincelapore-dev.vercel.app) · Brisbane, AU · [hello@vincelapore.com](mailto:hello@vincelapore.com)
+Vince Lapore · Brisbane, AU · [hello@vincelapore.com](mailto:hello@vincelapore.com)
